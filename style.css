@@ -1,0 +1,279 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00297B;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hambrger {
+    display: none;
+}
+
+.nav-bar>ul {
+    display: flex;
+    list-style: none;
+    /* background: red; */
+    width: 26rem;
+    justify-content: space-around;
+    margin: 1rem 0rem 0rem 0rem;
+    position: absolute;
+    cursor: pointer;
+}
+
+.listitem {
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0rem 0rem 0rem -2rem;
+    color: white;
+}
+
+#home-btn {
+    background-color: #5628E5;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 6rem;
+    text-align: center;
+}
+
+#home-btn:hover {
+    text-decoration: underline;
+}
+
+#project-btn:hover {
+    text-decoration: underline;
+}
+
+#technologies-btn:hover {
+    text-decoration: underline;
+}
+
+#contact-btn:hover {
+    text-decoration: underline;
+}
+
+.hero-section {
+    margin: 0rem 0rem 0rem 7rem;
+}
+
+.intro-to-self {
+    margin: 13rem 0rem 0rem 19rem;
+    position: absolute;
+}
+
+.hi {
+    font-size: 3rem;
+    margin: 0rem 0rem 0rem 8rem;
+}
+
+.mark-anderson {
+    margin: 0rem 0rem 0rem 4rem;
+}
+
+.developer {
+    margin: 0rem 0rem 0rem 4rem;
+    font-size: 3rem;
+    color: goldenrod;
+}
+
+.waving-hand {
+    width: 4rem;
+    margin: 1rem 0rem 0rem -8rem;
+    position: absolute;
+}
+
+.intro-para {
+    font-size: 4rem;
+    margin: 1rem 0rem 0rem -11rem;
+    line-height: 4rem;
+    color: white;
+}
+
+.HeroImage {
+    width: 41rem;
+    margin: 1rem 0rem 0rem 37rem;
+    height: 35rem;
+}
+
+.projects {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: row; */
+}
+
+.projectpara {
+    text-align: center;
+    margin: 4rem 0rem 0rem 0rem;
+    font-size: 3rem;
+    color: white;
+    text-decoration: underline;
+}
+
+.proimages {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.project_img {
+    width: 13rem;
+    margin: 3rem 4rem 2rem 4rem;
+}
+
+.contact {
+    margin: 0rem 0rem 1rem 0rem;
+    /* background: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    position: relative;
+    color: white;
+}
+
+.social {
+    display: flex;
+    margin: 0rem 0rem 0rem 33rem;
+    justify-content: center;
+    /* background: red; */
+    width: 28rem;
+    position: absolute;
+
+}
+
+.socialimage {
+    width: 2rem;
+    margin: 0rem 0rem 0rem 2rem;
+}
+
+@media (max-width:1440px) {
+    .nav-bar>ul {
+        margin: 1rem -18rem 0rem 0rem;
+    }
+
+    .hero-section {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .intro-to-self {
+        margin: 13rem 0rem 0rem -18rem;
+    }
+
+    .HeroImage {
+        margin: 1rem 0rem 0rem 45rem;
+    }
+
+    .projects {
+        margin: 0rem 0rem 0rem 16rem;
+    }
+
+    .contact {
+        margin: 0rem 0rem 0rem 15.9rem;
+
+    }
+
+    .social {
+        margin: 0rem 0rem 0rem 38.5rem;
+    }
+}
+
+@media(max-width:1024px) {
+    .social {
+        margin: 0rem 0rem 0rem 25rem;
+    }
+}
+
+@media(max-width:768px) {
+    .nav-bar>ul {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: flex-start;
+        /* background: red; */
+        width: 3rem;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .hambrger {
+        display: inline;
+        width: 2rem;
+        margin: auto;
+
+    }
+
+    .social {
+        margin: 0rem 0rem 0rem 17rem;
+    }
+}
+
+@media(max-width:425px) {
+    .nav-bar {
+        margin: 1rem 0rem 0rem 0rem;
+        padding: 1rem 4rem 1rem 1rem;
+    }
+
+    .intro-to-self {
+        margin: 10rem 0rem 0rem 13rem;
+        /* background: red; */
+        width: 38rem;
+        text-align: center;
+        padding: 0rem 0rem 0rem 9rem;
+    }
+
+    .waving-hand {
+        margin: -6rem 0rem 0rem -8rem;
+    }
+
+    .intro-para {
+        margin: 1rem 0rem 0rem -11rem;
+    }
+
+    .hi {
+        margin: 0rem;
+    }
+
+    .mark-anderson {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .developer {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .HeroImage {
+        margin: 29rem 0rem 0rem 12rem;
+        height: 32rem;
+    }
+
+    .social {
+        margin: 0rem 0rem 0rem 7rem;
+    }
+}
+
+@media(max-width:375px) {
+    .social {
+        margin: 0rem 0rem 0rem 5rem;
+    }
+}
+@media (max-width: 320px){
+.projects {
+    margin: 0rem 0rem 0rem 19rem;
+}
+.projectpara{
+    margin: 4rem 0rem 0rem -4rem;
+}
+.social{
+    margin: 0rem 0rem 0rem 3.5rem;
+}
+}
